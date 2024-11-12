@@ -1,0 +1,64 @@
+.header {
+  background-color: #b5ca99;
+  font-family: "Inter-Display", sans-serif;
+  color: #161616;
+  background-image: url(../images/header__background_leafs.png);
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1630px;
+  padding: 96px 150px 96px 139px;
+  margin: 0px;
+  gap: 175px;
+}
+
+.header__content-text {
+  max-width: 986px;
+}
+
+.header__pretitle {
+  margin: 0px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.header__title {
+  font-size: 80px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header__subtitle {
+  color: #252525;
+  max-width: 970px;
+  font-size: 38px;
+  font-weight: 200;
+  padding: 0px;
+  margin: 34px 0px 0px 0px;
+  line-height: 46px;
+}
+
+.header__button {
+  margin: 70px 0px 118px 0px;
+  font-size: 32px;
+  color: #3b5f09;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid, 2px, #3b5f09;
+  border-radius: 50px;
+  padding: 12px 47px;
+}
+.header__button:hover {
+  cursor: pointer;
+  background-color: #3b5f09;
+  color: #fff;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.1));
+}
+
+.header__image {
+  max-width: 470px;
+  width: 100%;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
+}

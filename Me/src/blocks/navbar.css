@@ -32,10 +32,17 @@
   font-size: 36px;
   line-height: auto;
 }
+.navbar__link:hover {
+  cursor: pointer;
+  color: #3b5f09;
+}
 .navbar__lang {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.navbar__lang:hover {
+  cursor: pointer;
 }
 .navbar__lang-arrow {
   max-width: 14px;
