@@ -59,6 +59,5 @@
 
 .header__image {
   max-width: 470px;
-  width: 100%;
   filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
 }
