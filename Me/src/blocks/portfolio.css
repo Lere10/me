@@ -11,10 +11,14 @@
 .portfolio__header_active {
   background-color: rgba(59, 95, 9, 1);
 }
+.portfolio__header_off {
+  color: rgba(255, 255, 255, 0.5);
+  box-shadow: inset gray 0px 0px 60px -12px;
+}
 
 .portfolio__header-dev {
   max-width: 960px;
-  box-shadow: inset gray 0px 0px 60px -12px;
+
   width: 100%;
   display: flex;
   align-items: center;
@@ -28,7 +32,7 @@
 
 .portfolio__header-design {
   max-width: 960px;
-  box-shadow: inset gray 0px 0px 20px -12px;
+
   width: 100%;
   display: flex;
   align-items: center;
