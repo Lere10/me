@@ -32,29 +32,37 @@ export default function Skills() {
       title: "git",
       icon: gitIcon,
     },
+    {
+      title: "figma",
+      icon: figmaIcon,
+    },
   ];
   return (
     <section className="skills">
-      <img
-        src={skillsImg}
-        alt="Foto de área de trabalho"
-        className="skills__img"
-      />
-      <div className="skills__header">
-        <p className="skills__pretitle">{skillsPretitle}</p>
-        <h3 className="skills__title">Ferramentas</h3>
-      </div>
-      <ul className="skills__grid">
-        {skills.map((skill, index) => {
-          return <SkillsTemplate key={index} props={skill} />;
-        })}
-      </ul>
-      <div className="skills__others">
-        <h4 className="skills__others-title">Outras habilidades úteis</h4>
-        <p className="skills__others-subtitle">
-          Inglês avançado, Espanhol intermediário, Pacote Adobe, Design
-          Thinking, Lean UX.
-        </p>
+      <div className="skills__content">
+        <img
+          src={skillsImg}
+          alt="Foto de área de trabalho"
+          className="skills__img"
+        />
+        <div className="skills__content-text">
+          <div className="skills__header">
+            <p className="skills__pretitle">{skillsPretitle}</p>
+            <h3 className="skills__title">Ferramentas</h3>
+          </div>
+          <ul className="skills__grid">
+            {skills.map((skill, index) => {
+              return <SkillsTemplate key={index} props={skill} />;
+            })}
+          </ul>
+          <div className="skills__others">
+            <h4 className="skills__others-title">Outras habilidades úteis:</h4>
+            <p className="skills__others-subtitle">
+              Inglês avançado, Espanhol intermediário, Pacote Adobe, Design
+              Thinking, Lean UX.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

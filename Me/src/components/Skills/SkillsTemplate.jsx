@@ -9,7 +9,9 @@ export default function SkillsTemplate({ props }) {
         alt={props.title ? props.title : "erro de imagem"}
         className="skills__topic-img"
       />
-      <p className="skills__topic-name">{props.title ? props.title : ""}</p>
+      <p className="skills__topic-name">
+        {props.title ? props.title.toUpperCase() : ""}
+      </p>
     </li>
   );
 }
