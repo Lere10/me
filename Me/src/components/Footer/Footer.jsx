@@ -1,4 +1,5 @@
 import React from "react";
+import "../../blocks/footer.css";
 import rect from "../../images/footer__rect.png";
 import phoneIcon from "../../images/footer__phone-img.png";
 import emailIcon from "../../images/footer__email-img.png";
@@ -33,32 +34,32 @@ export default function Footer() {
           </div>
         </div>
         <img className="footer__rect" src={rect} />
-        <ul className="footer__content-socials">
-          <li
+        <div className="footer__content-socials">
+          <a
             target="_blank"
             href="https://www.linkedin.com/in/lucas-iere-a197a5154/"
           >
             <img
-              className="footer__content-social-linkedin"
+              className="footer__content-socialIcon"
               alt="Linkedin Icon"
               src={linkedinIcon}
             />
-          </li>
-          <li target="_blank" href="https://github.com/Lere10">
+          </a>
+          <a target="_blank" href="https://github.com/Lere10">
             <img
-              className="footer__content-social-github"
+              className="footer__content-socialIcon"
               alt="Github Icon"
               src={gitHubIcon}
             />
-          </li>
-          <li target="_blank" href="https://www.behance.net/lucasbanko6416">
+          </a>
+          <a target="_blank" href="https://www.behance.net/lucasbanko6416">
             <img
-              className="footer__content-social-behance"
+              className="footer__content-socialIcon"
               alt="Behance Icon"
               src={behanceIcon}
             />
-          </li>
-        </ul>
+          </a>
+        </div>
       </div>
       <div className="footer__foot">
         <p className="footer__foot-text">By Lere</p>
