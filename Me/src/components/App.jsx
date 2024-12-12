@@ -5,10 +5,23 @@ import Skills from "./Skills/Skills.jsx";
 import Footer from "./Footer/Footer.jsx";
 
 function App() {
+  const [popup, setPopup] = useState(null);
+
+  function handleOpenPopup(popup){
+    setPopup(popup);
+  }
+  function handleClosePopup(){
+    setPopup(null)
+  }
+
+
   return (
     <>
       <Header />
-      <Portfolio />
+      <Portfolio
+        handleOpenPopup={handleOpenPopup}
+        handleClosePopup={handleClosePopup}
+      />
       <Skills />
       <Footer />
     </>

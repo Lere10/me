@@ -58,7 +58,7 @@ export default function Skills() {
           <div className="skills__others">
             <h4 className="skills__others-title">Outras habilidades úteis:</h4>
             <p className="skills__others-subtitle">
-              Inglês avançado, Espanhol intermediário, Pacote Adobe, Design
+              Inglês avançado, Espanhol intermediário, Hooks, Node, Express, Pacote Adobe, Design
               Thinking, Lean UX.
             </p>
           </div>

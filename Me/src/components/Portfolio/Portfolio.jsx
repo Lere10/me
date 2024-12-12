@@ -7,7 +7,10 @@ import LaVidaThumb from "../../images/Project__LavidaThumb.jpg";
 import HomelandThumb from "../../images/Project__homelandThumb.jpg";
 import CafeTripleTenThumb from "../../images/Project__CoffeThumb.png";
 
-export default function Portfolio() {
+export default function Portfolio(props) {
+
+  const { handleClosePopup, handleOpenPopup } = props
+
   const projects = [
     {
       projectName: "US Around",
