@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import Popup from "../Popup/Popup.jsx";
 
 export default function Template({ props }) {
-
-  const [popup, setPopup] = useState(null)
-
+  const [popup, setPopup] = useState(null);
   function handleOpenPopup(popup) {
     setPopup(popup);
   }
@@ -12,10 +10,22 @@ export default function Template({ props }) {
     setPopup(null);
   }
 
-
   return (
-    <section className="portfolio__grid-box">
-      {popup && <Popup onClose={handleClosePopup}></Popup>}
+    <section
+      onClick={() => {
+        handleOpenPopup(props);
+      }}
+      className="portfolio__grid-box"
+    >
+      {popup && (
+        <Popup
+          onClose={handleClosePopup}
+          title={popup.projectName}
+          desc={popup.description}
+          link={popup.link}
+          img={popup.projectThumb}
+        ></Popup>
+      )}
       <img
         className="portfolio__grid-box-img"
         src={props.projectThumb ? props.projectThumb : ""}

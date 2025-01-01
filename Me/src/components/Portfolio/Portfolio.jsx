@@ -8,8 +8,7 @@ import HomelandThumb from "../../images/Project__homelandThumb.jpg";
 import CafeTripleTenThumb from "../../images/Project__CoffeThumb.png";
 
 export default function Portfolio(props) {
-
-  const { handleClosePopup, handleOpenPopup } = props
+  const { handleClosePopup, handleOpenPopup } = props;
 
   const projects = [
     {
@@ -17,36 +16,42 @@ export default function Portfolio(props) {
       link: "https://github.com/Lere10/web_project_around",
       pageLink: "https://lere10.github.io/web_project_around/",
       projectThumb: USAroundThumb,
+      description: "lorem ipsum",
     },
     {
       projectName: "Soller",
       link: "https://github.com/Lere10/Buzzvel-Fest-Test",
       pageLink: "https://lere10.github.io/Buzzvel-Fest-Test/",
       projectThumb: SollerThumb,
+      description: "lorem ipsum",
     },
     {
       projectName: "La Vida",
       link: "https://github.com/Lere10/LaVida",
       pageLink: "https://lere10.github.io/LaVida/",
       projectThumb: LaVidaThumb,
+      description: "lorem ipsum",
     },
     {
       projectName: "Homeland",
       link: "https://github.com/Lere10/web_project_homeland",
       pageLink: "https://lere10.github.io/web_project_homeland/",
       projectThumb: HomelandThumb,
+      description: "lorem ipsum",
     },
     {
       projectName: "Biblioteca TripleTen",
       link: "https://github.com/Lere10/web_project_library",
       pageLink: "https://lere10.github.io/web_project_library/",
       projectThumb: CafeTripleTenThumb,
+      description: "lorem ipsum",
     },
     {
       projectName: "Ver mais",
       link: "",
       pageLink: "",
       projectThumb: "",
+      description: "",
     },
   ];
 
