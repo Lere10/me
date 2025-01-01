@@ -78,6 +78,9 @@
   color: #ffffff;
   font-weight: bold;
 }
+.portfolio__grid-box:hover{
+  cursor: pointer;
+}
 
 .portfolio__grid-box::before {
   content: "";
@@ -90,8 +93,7 @@
   background-color: rgba(59, 95, 9, 0.45);
 }
 .portfolio__grid-box:hover::before {
-  background-color: rgba(0, 0, 0, 0);
-  cursor: pointer;
+  display: none;
 }
 .portfolio__grid-box:last-child {
   background-color: #9eae87;
@@ -125,4 +127,11 @@
 }
 .portfolio__grid-box-label:hover {
   cursor: pointer;
+}
+.portfolio__seeMore{
+  color: #ffffff;
+}
+.portfolio__seeMore:hover{
+  cursor: pointer;
+  color: #ffffff;
 }

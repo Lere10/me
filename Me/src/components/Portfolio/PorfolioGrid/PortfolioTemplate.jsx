@@ -11,28 +11,46 @@ export default function Template({ props }) {
   }
 
   return (
-    <section
-      onClick={() => {
-        handleOpenPopup(props);
-      }}
-      className="portfolio__grid-box"
-    >
+    <section className="portfolio__grid-box">
       {popup && (
         <Popup
           onClose={handleClosePopup}
-          title={popup.projectName}
-          desc={popup.description}
-          link={popup.link}
-          img={popup.projectThumb}
-        ></Popup>
+          title={props.projectName}
+          img={props.projectThumb}
+          desc={props.descricao}
+          link={props.pageLink}
+        />
       )}
-      <img
-        className="portfolio__grid-box-img"
-        src={props.projectThumb ? props.projectThumb : ""}
-      />
-      <p className="portfolio__grid-box-label">
-        {props.projectName ? props.projectName : ""}
-      </p>
+      {props.descricao ? (
+        <>
+          <img
+            onClick={handleOpenPopup}
+            className="portfolio__grid-box-img"
+            src={props.projectThumb ? props.projectThumb : ""}
+          />
+
+          <p className="portfolio__grid-box-label">
+            {props.projectName ? props.projectName : ""}
+          </p>
+        </>
+      ) : (
+        <>
+          <a
+            href={props.pageLink}
+            target="_blank"
+            className="portfolio__seeMore"
+          >
+            <img
+              className="portfolio__grid-box-img"
+              src={props.projectThumb ? props.projectThumb : ""}
+            />
+
+            <p className="portfolio__grid-box-label">
+              {props.projectName ? props.projectName : ""}
+            </p>
+          </a>
+        </>
+      )}
     </section>
   );
 }
