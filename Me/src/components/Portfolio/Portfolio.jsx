@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PortfolioHeader from "./PortfolioHeader/PortfolioHeader.jsx";
 import Template from "./PorfolioGrid/PortfolioTemplate.jsx";
 import USAroundThumb from "../../images/Project__aroundThumb.jpeg";
@@ -8,10 +8,18 @@ import HomelandThumb from "../../images/Project__homelandThumb.jpg";
 import CafeTripleTenThumb from "../../images/Project__CoffeThumb.png";
 import GreenThumb from "../../images/greenRect.png";
 
-export default function Portfolio(props) {
-  const { handleClosePopup, handleOpenPopup } = props;
+import OdetteThumb from "../../images/Project__OdetteThumb.jpg";
+import mtThumb from "../../images/Project__mtThumb.jpg";
+import philipeThumb from "../../images/Project__philipeThumb.jpg";
+import afeetoThumb from "../../images/Project__afeetoThumb.png";
+import mobillsThumb from "../../images/Project__mobillsThumb.jpg";
 
-  const projects = [
+export default function Portfolio(props) {
+  // const { handleClosePopup, handleOpenPopup } = props;
+  const [devActive, setDevActive] = useState(true);
+  const [desActive, setDesActive] = useState(false);
+
+  const devProjects = [
     {
       projectName: "US Around",
       descricao: "Feito com React, Hooks, Node e Express",
@@ -56,13 +64,68 @@ export default function Portfolio(props) {
     },
   ];
 
+  const desProjects = [
+    {
+      projectName: "Afeeto",
+      descricao: "Projeto aplicação web & LP",
+      link: "https://www.behance.net/gallery/215918561/Afeeto",
+      pageLink: "https://www.behance.net/gallery/215918561/Afeeto",
+      projectThumb: afeetoThumb,
+    },
+    {
+      projectName: "Odette",
+      descricao: "Projeto de Landing Page para loja de artigos de mergulho",
+      link: "https://www.behance.net/gallery/129331981/Landing-Page-Odette",
+      pageLink: "https://www.behance.net/gallery/129331981/Landing-Page-Odette",
+      projectThumb: OdetteThumb,
+    },
+    {
+      projectName: "Meu Tudo & Felipe Brito",
+      descricao: "Landing Page e campanha de marketing",
+      link: "https://www.behance.net/gallery/129323249/Landing-Page-Campanha-Felipe-Brito",
+      pageLink:
+        "https://www.behance.net/gallery/129323249/Landing-Page-Campanha-Felipe-Brito",
+      projectThumb: philipeThumb,
+    },
+    {
+      projectName: "Meu Tudo campanha",
+      descricao: "Teste de design e aplicações com a meu tudo",
+      link: "https://www.behance.net/gallery/109851885/Desafio-Meu-Tudo",
+      pageLink: "https://www.behance.net/gallery/109851885/Desafio-Meu-Tudo",
+      projectThumb: mtThumb,
+    },
+    {
+      projectName: "Mobills Mirim",
+      descricao: "UX/UI Design para aplicativo de controle financeiro",
+      link: "https://www.behance.net/gallery/108977521/Desafio-Mobills",
+      pageLink: "https://www.behance.net/gallery/108977521/Desafio-Mobills",
+      projectThumb: mobillsThumb,
+    },
+    {
+      projectName: "Ver mais",
+      descricao: null,
+      link: "",
+      pageLink: "https://www.behance.net/lucasbanko6416",
+      projectThumb: GreenThumb,
+    },
+  ];
+
   return (
     <section className="portfolio">
-      <PortfolioHeader />
+      <PortfolioHeader
+        devActive={devActive}
+        setDevActive={setDevActive}
+        desActive={desActive}
+        setDesActive={setDesActive}
+      />
       <div className="portfolio__grid">
-        {projects.map((project, index) => {
-          return <Template key={index} props={project} />;
-        })}
+        {devActive
+          ? devProjects.map((project, index) => {
+              return <Template key={index} props={project} />;
+            })
+          : desProjects.map((project, index) => {
+              return <Template key={index} props={project} />;
+            })}
       </div>
     </section>
   );

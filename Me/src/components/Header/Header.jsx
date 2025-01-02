@@ -12,9 +12,7 @@ export default function Header() {
       <section className="header__content">
         <div className="header__content-text">
           <p className="header__pretitle">{pretitle}</p>
-          <h1 className="header__title">
-            Desenvolvedor front-end & Web designer
-          </h1>
+          <h1 className="header__title">Web Developer & Designer</h1>
           <p className="header__subtitle">
             Olá, me chamo Lucas Ierê, sou de Fortaleza no Ceará, formado em
             Sistemas e Mídias Digitais pela UFC,
