@@ -37,7 +37,7 @@
   color: #3b5f09;
 }
 .navbar__lang {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 20px;
 }
