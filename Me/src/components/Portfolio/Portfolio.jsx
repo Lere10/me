@@ -22,7 +22,7 @@ export default function Portfolio(props) {
   const devProjects = [
     {
       projectName: "US Around",
-      descricao: "Feito com React, Hooks, Node e Express",
+      descricao: "Feito com React, Node, Express e MongoDB",
       link: "https://github.com/Lere10/web_project_around",
       pageLink: "https://lere10.github.io/web_project_around/",
       projectThumb: USAroundThumb,

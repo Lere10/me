@@ -47,7 +47,7 @@
 }
 .popup__content-text {
   margin: 0px;
-  padding: 63px 0px 74px 71px;
+  padding: 40px 0px 74px 71px;
 }
 .popup__title {
   margin: 0px;
@@ -55,15 +55,16 @@
   font-weight: bold;
 }
 .popup__desc {
+  line-height: 1.2;
   margin: 0px;
   font-size: 40px;
   font-weight: normal;
-  padding: 33px 0px;
+  padding: 0px 0px 30px 0px;
 }
 .popup__link {
   font-size: 35px;
   font-weight: lighter;
-  text-decoration: none;
+  text-decoration: underline;
   color: #161616;
 }
 .popup__link:hover {
