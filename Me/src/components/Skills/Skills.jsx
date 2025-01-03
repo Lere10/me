@@ -38,7 +38,7 @@ export default function Skills() {
     },
   ];
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <div className="skills__content">
         <img
           src={skillsImg}

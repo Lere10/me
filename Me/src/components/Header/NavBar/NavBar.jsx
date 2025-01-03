@@ -12,10 +12,26 @@ export default function NavBar() {
           <img src={Logo} alt="Logo" className="navbar__logo" />
 
           <ul className="navbar__links">
-            <li className="navbar__link">Sobre mim</li>
-            <li className="navbar__link">Porfólios</li>
-            <li className="navbar__link">Ferramentas</li>
-            <li className="navbar__link">Contatos</li>
+            <li>
+              <a className="navbar__link" href="#about">
+                Sobre mim
+              </a>
+            </li>
+            <li>
+              <a className="navbar__link" href="#portfolio">
+                Porfólios
+              </a>
+            </li>
+            <li>
+              <a className="navbar__link" href="#skills">
+                Ferramentas
+              </a>
+            </li>
+            <li>
+              <a className="navbar__link" href="#contact">
+                Contatos
+              </a>
+            </li>
           </ul>
 
           <div className="navbar__lang">

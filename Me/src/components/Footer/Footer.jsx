@@ -10,7 +10,7 @@ import behanceIcon from "../../images/footer__be.png";
 export default function Footer() {
   const phoneNumber = "+55 (85) 99767-5292";
   return (
-    <section className="footer">
+    <section className="footer" id="contact">
       <h3 className="footer__title">Contatos</h3>
       <div className="footer__content">
         <div className="footer__content-contact">
@@ -62,7 +62,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer__foot">
-        <p className="footer__foot-text">By Lere</p>
+        <p className="footer__foot-text">By Lere. 2025</p>
       </div>
     </section>
   );

@@ -111,7 +111,7 @@ export default function Portfolio(props) {
   ];
 
   return (
-    <section className="portfolio">
+    <section className="portfolio" id="portfolio">
       <PortfolioHeader
         devActive={devActive}
         setDevActive={setDevActive}

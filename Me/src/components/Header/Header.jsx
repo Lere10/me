@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="header">
       <NavBar />
-      <section className="header__content">
+      <section id="about" className="header__content">
         <div className="header__content-text">
           <p className="header__pretitle">{pretitle}</p>
           <h1 className="header__title">Web Developer & Designer</h1>

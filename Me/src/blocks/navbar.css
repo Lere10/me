@@ -28,6 +28,8 @@
   gap: 75px;
 }
 .navbar__link {
+  text-decoration: none;
+  color: #000;
   text-wrap: nowrap;
   font-size: 36px;
   line-height: auto;
