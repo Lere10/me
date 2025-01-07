@@ -3,11 +3,8 @@
 </h1>
 
 <h3 align="center">
-    Lere
+    Lucas "Lere" de Souza Bezerra
 </h3>
-
-<img alt="Last Commit" src="https://img.shields.io/badge/last%20commit-October%2029th%202024-blue">
-
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 
   <a href="https://github.com/Lere10">
