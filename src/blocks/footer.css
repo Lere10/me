@@ -94,3 +94,41 @@
     max-width: 330px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .footer__title {
+    margin: 77px auto 77px 77px;
+    font-size: 44px;
+  }
+  .footer__content {
+    max-width: 850px;
+  }
+  .footer__content-contact-phone-text,
+  .footer__content-contact-email-text {
+    font-size: 22px;
+  }
+  .footer__content-contact-phone-img,
+  .footer__content-contact-email-img {
+    max-width: 40px;
+    width: 100%;
+  }
+  .footer__content-contact {
+    display: flex;
+    max-width: 600px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer__content-socials {
+    max-width: 200px;
+  }
+  .footer__content-socialIcon {
+    max-width: 50px;
+  }
+  .footer__content-contact-phone,
+  .footer__content-contact-email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
