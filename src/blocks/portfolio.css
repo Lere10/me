@@ -78,7 +78,7 @@
   color: #ffffff;
   font-weight: bold;
 }
-.portfolio__grid-box:hover{
+.portfolio__grid-box:hover {
   cursor: pointer;
 }
 
@@ -128,10 +128,27 @@
 .portfolio__grid-box-label:hover {
   cursor: pointer;
 }
-.portfolio__seeMore{
+.portfolio__seeMore {
   color: #ffffff;
 }
-.portfolio__seeMore:hover{
+.portfolio__seeMore:hover {
   cursor: pointer;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1440px) {
+  .portfolio__grid-box {
+    max-width: 480px;
+    max-height: 332px;
+  }
+  .portfolio__title {
+    font-size: 48px;
+  }
+  .portfolio__pretitle {
+    font-size: 24px;
+  }
+  .portfolio__grid-box:last-child {
+    font-size: 80px;
+    line-height: 1.2;
+  }
 }
