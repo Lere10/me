@@ -15,10 +15,10 @@ export default function Header() {
           <h1 className="header__title">Web Developer & Designer</h1>
           <p className="header__subtitle">
             Olá, me chamo Lucas Ierê, sou de Fortaleza no Ceará, formado em
-            Sistemas e Mídias Digitais pela UFC,
-            <br /> e apaixonado por aplicações web, desde suas concepções no
-            design até o desenvolvimento em código. Fã de animes e mangás,
-            entusiasta de geografia e faço roteiros de viagens nas horas vagas.
+            Sistemas e Mídias Digitais pela UFC, e apaixonado por aplicações
+            web, desde suas concepções no design até o desenvolvimento em
+            código. Fã de animes e mangás, entusiasta de geografia e faço
+            roteiros de viagens nas horas vagas.
           </p>
           <button className="header__button">Baixe meu currículo</button>
         </div>
