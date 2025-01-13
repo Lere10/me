@@ -20,7 +20,17 @@ export default function Header() {
             código. Fã de animes e mangás, entusiasta de geografia e faço
             roteiros de viagens nas horas vagas.
           </p>
-          <button className="header__button">Baixe meu currículo</button>
+          <button
+            className="header__button"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1I8WMA2XKgRWWER8r4bjfA_mMxVYt97xq/view?usp=drive_link",
+                "_blank"
+              )
+            }
+          >
+            Baixe meu currículo
+          </button>
         </div>
         <img
           className="header__image"
