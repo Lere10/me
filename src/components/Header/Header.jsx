@@ -24,7 +24,7 @@ export default function Header() {
             className="header__button"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1I8WMA2XKgRWWER8r4bjfA_mMxVYt97xq/view?usp=drive_link",
+                "https://drive.google.com/file/d/1I8WMA2XKgRWWER8r4bjfA_mMxVYt97xq/view?usp=sharing",
                 "_blank"
               )
             }
